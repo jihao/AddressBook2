@@ -9,8 +9,8 @@ import java.util.concurrent.Executors;
  * input and execution.
  */
 public class AddressBookMain {
-  public static void mian(String[] args) {
-		ExecutorService executor = Executors.newCachedThreadPool();
-		executor.execute(new ManageCommands());
-	}
+    public static void mian(String[] args) {
+        ExecutorService executor = Executors.newCachedThreadPool();
+	executor.execute(new ManageCommands());
+    }
 }
