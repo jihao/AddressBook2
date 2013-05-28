@@ -125,7 +125,7 @@ public class AddressBook{
 	
     /**
      * <b>Description:</b><br>
-     * Return if a person exists in the current directory.
+     * Return true if a person exists in the current directory.
      * 
      * @param name - String - the name of a specified person - Example: "lilei"
      * 
