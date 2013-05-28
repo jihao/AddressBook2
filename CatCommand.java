@@ -29,7 +29,7 @@ public class CatCommand {
 	} else {
 	    this.output = name + " does not exist.";
 	}
-	    return this;
+        return this;
     }
    
     /**
