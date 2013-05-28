@@ -6,7 +6,7 @@ import java.util.Set;
 /**
  * <b>Description:</b><br>
  * The class stores and manages the addresses of different persons. 
- * Functions display data, add person and remove person are also included.
+ * Functions like display data, add person and remove person are also included.
  */
 public class AddressBook{
     
