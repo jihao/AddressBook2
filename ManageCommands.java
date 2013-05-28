@@ -28,6 +28,7 @@ public class ManageCommands implements Runnable {
      * the command type.
      * 
      * @param input - String - input command - Examples : "cd entries"
+     * 
      * @return HashMap<String, String> - parsed command 
      */
     private HashMap<String,String> parseCommand(String input) {
@@ -70,9 +71,9 @@ public class ManageCommands implements Runnable {
 	
 	/**
 	 * <b>Description:</b><br>
-	 * Implementation of run() function of ManageCommands. Read 
-	 * commands repeatedly from standard IO. Then parse the input 
-	 * commands and start a corresponding thread. 
+	 * Implementation of run() method of ManageCommands. Read commands 
+	 * repeatedly from standard IO. Then parse the input, execute a corresponding 
+	 * command and print the output messages. 
 	 */
 	public void run() {
 	    System.out.println("running");
