@@ -104,51 +104,50 @@ public class AddressBook{
      * 
      * @param name - String - the name of a specified person - Example: "lilei"
      * 
-     * @return String 
-     * /
+     * @return String - a person's information
+     */
      public String getPersonData(String name) {
-		return this.data.get("entries").get(name).getInformation();
-	}
+         return this.data.get("entries").get(name).getInformation();
+     }
 	
-	/**
-	 * <b>Description:</b><br>
-	 * Add a specified person into entries.
-	 * 
-	 * @param name - String - the name of a specified person - Example: "lilei"
-	 * @param age - Integer - the age of a person - Example: 26
-	 * @param mobile - String - the mobile phone number - Example: "13800000000"
-	 * @param address - String - the address of a person - Example: "Shanghai"
-	 */
-	public void addPerson(String name, int age, String mobile, String address) {
-		this.data.get(this.currentDirectory).put(name, 
-				new Person(name, age, mobile, address));
-	}
+    /**
+     * <b>Description:</b><br>
+     * Add a specified person into entries.
+     * 
+     * @param name - String - the name of a specified person - Example: "lilei"
+     * @param age - Integer - the age of a person - Example: 26
+     * @param mobile - String - the mobile phone number - Example: "13800000000"
+     * @param address - String - the address of a person - Example: "Shanghai"
+     */
+     public void addPerson(String name, int age, String mobile, String address) {
+         this.data.get(this.currentDirectory).put(name, new Person(name, age, mobile, address));
+     }
 	
-	/**
-	 * <b>Description:</b><br>
-	 * Return if a person exists in the current directory.
-	 * 
-	 * @param name - String - the name of a specified person - Example: "lilei"
-	 * 
-	 * @return boolean 
-	 */
-	public boolean existInCurrentDirectory(String name) {
-		if(currentDirectory.equals("root")) {
-			return this.data.containsKey(name);
-		} else {
-			return this.data.get(currentDirectory).containsKey(name);
-		}
-	}
+    /**
+     * <b>Description:</b><br>
+     * Return if a person exists in the current directory.
+     * 
+     * @param name - String - the name of a specified person - Example: "lilei"
+     * 
+     * @return boolean 
+     */
+     public boolean existInCurrentDirectory(String name) {
+	 if(currentDirectory.equals("root")) {
+	     return this.data.containsKey(name);
+	 } else {
+	     return this.data.get(currentDirectory).containsKey(name);
+	 }
+     }
 	
-	/**
-	 * <b>Description:</b><br>
-	 * Remove a specified person from entries.
-	 * 
-	 * @param name - String - the name of the person being removed - Example: "lilei"
-	 */
-	public void removePerson(String name) {
-		this.data.get(this.currentDirectory).remove(name);
-	}
+    /**
+     * <b>Description:</b><br>
+     * Remove a specified person from entries.
+     * 
+     * @param name - String - the name of the person being removed - Example: "lilei"
+     */
+     public void removePerson(String name) {
+         this.data.get(this.currentDirectory).remove(name);
+     }
 }
 
 /**
@@ -156,34 +155,35 @@ public class AddressBook{
  * The class can be used to restore and display the information of a person. 
  */
 class Person {
-	private String name;
-	private int age;
-	private String mobile;
-	private String address;
+     
+     private String name;
+     private int age;
+     private String mobile;
+     private String address;
 	
-	/**
-	 * <b>Description:</b><br>
-	 * The constructor of class Person.
-	 * 
-	 * @param name - String
-	 * @param age - int
-	 * @param mobile - String
-	 * @param address - String
-	 */
-	public Person(String name, int age, String mobile, String address) {
-		this.name = name;
-		this.age = age;
-		this.mobile = mobile;
-		this.address = address; 
-	}
+    /**
+     * <b>Description:</b><br>
+     * The constructor of class Person.
+     * 
+     * @param name - String
+     * @param age - int
+     * @param mobile - String
+     * @param address - String
+     */
+     public Person(String name, int age, String mobile, String address) {
+         this.name = name;
+	 this.age = age;
+	 this.mobile = mobile;
+	 this.address = address; 
+     }
 	
-	/**
-	 * <b>Description:</b><br>
-	 * Display the informations of this person.
-	 */
-	public String getInformation() {
-		return "\"" + this.name + "\" : { \"age\": " + this.age 
-				+", \"mobile\": \"" + this.mobile + "\", \"address\": \"" 
-				+ this.address + "\"}";
-	}
+    /**
+     * <b>Description:</b><br>
+     * Display the informations of this person.
+     */
+     public String getInformation() {
+         return "\"" + this.name + "\" : { \"age\": " + this.age 
+		+", \"mobile\": \"" + this.mobile + "\", \"address\": \"" 
+		+ this.address + "\"}";
+     }
 }
