@@ -88,7 +88,7 @@ public class AddCommand {
 	    addressBook.addPerson(name, age, mobile, address);
 	    this.output = "Address entry added.";
 	}
-	    return this;
+	return this;
     }
 	
     /**
