@@ -34,13 +34,13 @@ import junit.framework.TestCase;
 * Output help message.
 * <p>
 * AddCommand:<br>
-* If current directory is not "entries", output error message. In "entries",
-* if the person to be added already existed, output error message. If it 
-* does not exist, add person into "entries".
+* If current directory is "root", output error message. In "entries", if 
+* the person to be added already exists, output error message. If it does 
+* not exist, add this person into "entries".
 * <p>
 * RemoveCommand:<br>
-* If current directory is not "entries", output error message. In "entries",
-* if person to be removed already exists, remove this person from "entries".
+* If current directory is "root", output error message. In "entries", if 
+* the person to be removed already exists, remove this person from "entries".
 * If it does not exist, output error message.
 * <p>
 */
