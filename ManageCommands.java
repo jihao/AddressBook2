@@ -24,7 +24,7 @@ public class ManageCommands implements Runnable {
 	/**
 	 * <b>Description:</b><br>
 	 * Local method. Parse the input command into command type and parameter,
-   * restore them in a HasMap. If command has no parameters, just restore the 
+         * restore them in a HasMap. If command has no parameters, just restore the 
 	 * command type.
 	 * 
 	 * @param input - String - input command - Examples : "cd entries"
