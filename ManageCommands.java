@@ -24,8 +24,8 @@ public class ManageCommands implements Runnable {
     /**
      * <b>Description:</b><br>
      * Local method. Parse the input command into command type and parameter,
-     * restore them in a HasMap. If command has no parameters, just restore the 
-     * command type.
+     * restore them in a HashMap. If command has no parameters, just restore 
+     * the command type.
      * 
      * @param input - String - input command - Examples : "cd entries"
      * @return HashMap<String, String> - parsed command 
@@ -112,6 +112,7 @@ public class ManageCommands implements Runnable {
 			continue;
 		    } else if(command.get("type").equals("quit")) {
 			loop = false;
+			System.out.println("Quited");
 		    } 
 		}
 	    } catch (IOException e1) {
