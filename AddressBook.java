@@ -112,7 +112,7 @@ public class AddressBook{
 	
     /**
      * <b>Description:</b><br>
-     * Add a specified person into entries.
+     * Add a specified person into current directory.
      * 
      * @param name - String - the name of a specified person - Example: "lilei"
      * @param age - Integer - the age of a person - Example: 26
@@ -141,7 +141,7 @@ public class AddressBook{
 	
     /**
      * <b>Description:</b><br>
-     * Remove a specified person from entries.
+     * Remove a specified person from current direcotry.
      * 
      * @param name - String - the name of the person being removed - Example: "lilei"
      */
