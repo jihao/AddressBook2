@@ -21,22 +21,28 @@ import junit.framework.TestCase;
 * is a directory name in command, check the name. Then enter the directory 
 * if it exists in current position in address book. If the directory doesn't 
 * exist here, output the error message.
+* <p>
 * CatCommand:<br>
 * Output error message if current directory is not "entries" or the person 
 * name does not exist. Out put the person's information if name exists in 
 * current directory.
+* <p>
 * LsCommand:<br>
 * List all items in current directory.
+* <p>
 * HelpCommand:<br>
 * Output help message.
+* <p>
 * AddCommand:<br>
 * If current directory is not "entries", output error message. In "entries",
 * if the person to be added already existed, output error message. If it 
 * does not exist, add person into "entries".
+* <p>
 * RemoveCommand:<br>
 * If current directory is not "entries", output error message. In "entries",
 * if person to be removed already exists, remove this person from "entries".
 * If it does not exist, output error message.
+* <p>
 */
 public class AddressBookJunitTest extends TestCase {
    
