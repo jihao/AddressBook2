@@ -8,7 +8,7 @@ import java.util.Set;
  * The class stores and manages the addresses of different persons. 
  * Functions like display data, add person and remove person are also included.
  */
-public class AddressBook{
+public class AddressBook {
     
     /**
      * The HashTable used to restore data of persons.
@@ -29,7 +29,7 @@ public class AddressBook{
      * <b>Description:</b><br>
      * The default constructor of class AddressBook.
      */
-    private AddressBook(){
+    private AddressBook() {
          Person lilei = new Person("lilei", 27, "13700000000", "Earth somewhere");
 	 Person hanmeimei = new Person("hanmeimei", 26, "13700000001", "Earth somewhere else");
  	 Hashtable<String,Person> entries = new Hashtable<String, Person>();
@@ -45,10 +45,10 @@ public class AddressBook{
      * 
      * @return AddressBook - the single instance 
      */
-    public static AddressBook getInstance(){
-	if(instance == null){
-	    synchronized (AddressBook.class){
-	        if(instance == null){
+    public static AddressBook getInstance() {
+	if(instance == null) {
+	    synchronized (AddressBook.class) {
+	        if(instance == null) {
 		    instance = new AddressBook();
                 }
 	    }
@@ -90,7 +90,7 @@ public class AddressBook{
      * 
      * return Set<String> - set of all items' names
      */
-    public Set<String> getCurrentItems(){
+    public Set<String> getCurrentItems() {
 	if(this.currentDirectory == "root") {
 	    return this.data.keySet();
 	} else {
