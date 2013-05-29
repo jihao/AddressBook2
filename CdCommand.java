@@ -9,7 +9,7 @@ import ericsson.online.exam.AddressBook;
  * position in AddressBook.
  * </p>
  */
-public class CdCommand {
+public class CdCommand extends Commands {
     private String directory;
     private String output = "";
     public CdCommand(String directory) {
@@ -45,6 +45,7 @@ public class CdCommand {
      * 
      * @return String - output information
      */
+    @Override
     public String getOutput() {
 	if(this.output.equals("")) {
             return "Cd command not executed.";
