@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
  * and commands execution.
  */
 public class AddressBookMain {
-    public static void mian(String[] args) {
+    public static void main(String[] args) {
         ExecutorService executor = Executors.newCachedThreadPool();
 	executor.execute(new ManageCommands());
     }
