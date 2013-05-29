@@ -12,7 +12,7 @@ import ericsson.online.exam.AddressBook;
  * The class handles the task to add a specified person into the current 
  * position in AddressBook.
  */
-public class AddCommand {
+public class AddCommand extends Commands{
   
     private String output = "";
     private String name;
@@ -97,6 +97,7 @@ public class AddCommand {
      * 
      * @return String - output information
      */
+     @Override
     public String getOutput() {
 	if(this.output.equals("")) {
 	    return "Add command not executed.";
