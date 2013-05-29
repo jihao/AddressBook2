@@ -17,7 +17,7 @@ public class RemoveCommand {
      * <b>Description:</b><br>
      * Default constructor. Read the name of a person form IO.
      */
-    public RemoveCommand() {
+    public RemoveCommand() extends Commands {
 	InputStreamReader in = new InputStreamReader(System.in);
 	BufferedReader br=new BufferedReader(in);
 	try {
@@ -66,6 +66,7 @@ public class RemoveCommand {
      * 
      * @return String - output information
      */
+    @Override
     public String getOutput() {
 	if(this.output.equals("")) {
 	    return "remove command not executed.";
