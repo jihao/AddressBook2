@@ -6,7 +6,7 @@ import ericsson.online.exam.AddressBook;
  * <b>Description:</b><br>
  * The class handles the task to display a specified person's information.
  */
-public class CatCommand {
+public class CatCommand extends Commands {
     private String name;
     private String output = "";
     public CatCommand(String name) {
@@ -38,6 +38,7 @@ public class CatCommand {
      * 
      * @return String - output information
      */
+     @Override
     public String getOutput() {
 	if(this.output.equals("")) {
 	    return "Cat command not executed.";
