@@ -8,7 +8,7 @@ import ericsson.online.exam.AddressBook;
  * <b>Description:</b><br>
  * The class handles the task to List all items in current position.
  */
-public class LsCommand {
+public class LsCommand extends Commands {
     private String output = "";
 	
     /**
@@ -32,6 +32,7 @@ public class LsCommand {
      * 
      * @return String - output information
      */
+    @Override
     public String getOutput() {
 	if(this.output.equals("")) {
 	    return "Ls command not executed.";
