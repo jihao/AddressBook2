@@ -4,7 +4,7 @@ package ericsson.online.exam.commands;
  * <b>Description:</b><br>
  * The class handles the task to display the help information.
  */
-public class HelpCommand {
+public class HelpCommand extends Commands {
 	
     private String output = "";
 	
@@ -26,6 +26,7 @@ public class HelpCommand {
      * 
      * @return String - output information
      */
+    @Override
     public String getOutput() {
 	if(this.output.equals("")) {
 	    return "Help command not executed.";
