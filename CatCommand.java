@@ -38,7 +38,7 @@ public class CatCommand extends Commands {
      * 
      * @return String - output information
      */
-     @Override
+    @Override
     public String getOutput() {
 	if(this.output.equals("")) {
 	    return "Cat command not executed.";
